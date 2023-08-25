@@ -1,0 +1,91 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+.big {
+    border: 1px black;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 20px;
+    width: 300px;
+}
+.header {
+    align-content: center;
+    font-weight: 100;
+    font-size: 30px;   
+}
+.bady {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.tog {
+    display: flex;
+    gap: 100px;
+}
+.in {
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.put {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px 0;
+}
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+  }
+  .new {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .an {
+    color: blue;
+  }
+  .an:hover {
+    text-decoration: underline blue;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding-top: 70px;
+  }
+  .list>li:hover {
+    text-decoration: underline blue;
+    cursor: pointer;
+  }
+  li:nth-child(4):hover {
+    color: blue;
+  }
+  li:nth-child(-n + 3) {
+    color: blue;
+  }
+  /* another way of doing it */
+  /* .list > li:hover {
+    text-decoration: underline blue;
+}
+
+li:nth-child(4):hover,
+li:nth-child(-n + 3):hover {
+    color: blue;
+} */
+.h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
