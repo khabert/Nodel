@@ -1,0 +1,13 @@
+* {
+    /* padding: 0%; */
+    margin: 0%;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.last {
+    padding-bottom: 70px;    
+}

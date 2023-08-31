@@ -82,7 +82,7 @@ nav {
 .open {
     position: absolute;
     top: 0;
-    background-color: orange;
+    background-color:orange;
 }
 .inner {
     display: flex;
@@ -90,9 +90,13 @@ nav {
     justify-content: space-around;
 }
 .fields {
-    padding-top: 5rem;
     text-align: center;
     min-height: 100vh;
+    /* margin-bottom: 70px; */
+    position: relative;
+    background-color: aliceblue;
+    padding-bottom: 5rem;
+    z-index: -100;
 }
 .place {
     font-size: 30px;
@@ -101,6 +105,16 @@ nav {
 .alx {
     font-size: 20px;
     margin-top: 10px;
+}
+.tri {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    clip-path: polygon(50% 100%, 100% 0, 0 0);
+    background-color: aliceblue;
+    bottom: -40px;
+
+    
 }
 .card {
     height: 200px;
@@ -127,14 +141,15 @@ img {
 }
 .plus {
     padding: 10px 20px;
-
 }
 .five {
+    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
     padding: 0 100px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    /* flex-direction: column; */
 }
 @media screen and (max-width: 991px) {
     .five {
@@ -142,7 +157,7 @@ img {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 50px;
         padding: 0 50px;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
     }
 }
 .now {
@@ -162,32 +177,51 @@ img {
     width: 100%;
     border-style: outset;
     margin-bottom: 50px;
-    -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
- clip-path: polygon(0% 2%, 200% 0, 100% 100%, 0% 100%, 0 84%, 0 0);  
+    z-index: -200;
+    padding-top: 60px;
+    /* -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+ clip-path: polygon(0% 2%, 200% 0, 100% 100%, 0% 100%, 0 84%, 0 0);   */
 }
 .rank {
     display: flex;
     justify-content: center;
     gap: 100px;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 .long {
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
     align-items: center;
 }
-.card1 {
-        
+.all {
+    /* position: relative; */
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
 }
-.tri {
-    background-color: aliceblue;
+.together {
+    padding-top: 20px;   
+}
+.tria {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.word {
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 20px;
+}
+.herb {
     height: 100px;
     width: 100px;
-    position: absolute;
-    clip-path: polygon(50% 100%, 100% 0, 0 0);
+    border-radius: 50%;
 }
-.all {
-    position: relative;
-    height: 100vh;
-    background-color: red;
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

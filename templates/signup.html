@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cfsni.com/signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sytle.css') }}">
+</head>
+<body class="bady">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+    <p class="header">Create an Account</p>
+    <div class="big">
+        <form action="{{ url_for('signup') }}" method="POST">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="put">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="put">
+            </div>
+            <button type="submit" class="in">Sign up</button>
+        </form>
+    </div>
+    <div class="new">
+        <p>Already have an account?</p>
+        <p class="an"><a href="{{ url_for('login') }}">Log in.</a></p>
+    </div>
+    <ul class="list">
+        <li>Terms</li>
+        <li>Privacy</li>
+        <li>Docs</li>
+        <li>Contact CFSNI Support</li>
+    </ul>
+</body>
+</html>
