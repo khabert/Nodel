@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampala Central Initiatives</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="kampala-section">
+        <div>
+            <h1 class="plus">Kampala Central Initiatives:</h1>
+            <p>3 months/once a week</p>
+            <p>Our Kampala Central Initiatives focus on:</p>
+            <ul>
+                <li>Assessing the current state of food security and nutrition</li>
+                <li>Developing strategies to improve access to nutritious and affordable food options</li>
+                <li>Creating partnerships with local food producers</li>
+            </ul>
+        </div>
+        <div class="last">
+            <a href="{{ url_for('index') }}"><button class="btn">Back to Home</button></a>
+        </div>
+    </div>
+</body>
+</html>
