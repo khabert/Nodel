@@ -39,7 +39,7 @@ nav {
 /* 1rem = 16px */
 
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1690789824921-6754195c97ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://media.istockphoto.com/id/1491190941/photo/uganda-map-soil-land-geology-cross-section-with-green-grass-and-rock-ground-texture-3d.jpg?s=2048x2048&w=is&k=20&c=KSdL21lOlwsTur0c34Y4b_lhVFULqFRALgniUV5gpao=");
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,6 +88,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.now1:hover {
+    background-color: green;
+    cursor: pointer;
+    color: white;
 }
 .fields {
     text-align: center;

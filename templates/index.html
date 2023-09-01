@@ -4,20 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="" type="image/x-icon"> -->
     <title>Community Food Security and Nutrition Initiative</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='js/0-script.js') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='js/0-script.js') }}"> -->
 </head>
 <body>
    <nav>
     <h1 class="heading"><a href="{{ url_for('index') }}">CFSNI</a></h1>
-    <!-- <ul class="list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Programmes</a></li>
-        <li>Admissions</li>
-        <li><a href="{{ url_for('login') }}">Login/Signup</a></li>
-    </ul> -->
     <ul class="list">
         <li><a href="#">About</a></li>
         <li><a href="#">Programmes</a></li>
@@ -53,8 +46,7 @@
                     <p>from Now-5months<br/> Time | Application deadline...</p>
             </div>
                 <div>
-                    <!-- <input id="email" type="text"> -->
-                    <button class="now1">Apply Now</button>
+                    <a href="{{ url_for('apply') }}"><button class="now1">Apply Now</button></a>
                 </div>
 
         </div>
@@ -75,73 +67,73 @@
                 <div class="first">
                     <div class="card">
                         <p class="now">NOW OPEN</p>
-                        <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt="">
+                        <img src="https://images.unsplash.com/photo-1578325872347-6cc1795a5fea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="">
                     </div>
                     <div>
-                        <h1 class="plus">Kampala central:</h1>
-                        <p>3 months/once in a week</p>
+                        <h1 class="plus">Kampala Central Initiatives:</h1>
+                        <p>Master your diet now by clicking <b>'checkout Now'</b></p>
                     </div>
+
                     <div class="last">
-                        <p>Learn more</p>
-                        <button class="btn">Enroll Now</button>
+                        <a href="{{ url_for('kampala_initiatives') }}"><button class="btn">Checkout Now</button></a>
                     </div>
                 </div>
                 <div class="first">
                     <div class="card">
                         <p class="now">NOW OPEN</p>
-                        <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt="">
+                        <img src="https://images.unsplash.com/photo-1640532919992-dd55ddd29a8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEVhc3Rlcm4lMjB1Z2FuZGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60" alt="">
                     </div>
                     <div>
-                        <h1 class="plus">Easten ug</h1>
-                        <p>5 months/Twice a week</p>
+                        <h1 class="plus">Eastern Uganda:</h1>
+                        <p>Master your diet now by clicking <b>'checkout Now'</b></p>
                     </div>
+
                     <div class="last">
-                        <p>Learn more</p>
-                        <button class="btn">Enroll Now</button>
+                        <a href="{{ url_for('kampala_initiatives') }}"><button class="btn">Checkout Now</button></a>
                     </div>
                 </div>
                 <div class="first">
                     <div class="card">
                         <p class="now">NOW OPEN</p>
-                        <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt="">
+                        <img src="https://media.istockphoto.com/id/171249479/photo/long-horned-ankole-cattle-along-the-road-in-uganda.jpg?s=1024x1024&w=is&k=20&c=Zlul-1KrER5Ksf-BL_bZKiT3K-cvKU2z9gvd8QPMdP4=" alt="">
                     </div>
                     <div>
-                        <h1 class="plus">Westen Ug</h1>
-                        <p>4 months/once a week</p>
+                        <h1 class="plus">Western Uganda:</h1>
+                        <p>Master your diet now by clicking <b>'checkout Now'</b></p>
                     </div>
+
                     <div class="last">
-                        <p>Learn more</p>
-                        <button class="btn">Enroll Now</button>
+                        <a href="{{ url_for('kampala_initiatives') }}"><button class="btn">Checkout Now</button></a>
                     </div>
                 </div>
                 <div class="first">
                     <div class="card">
                         <p class="now">NOW OPEN</p>
-                        <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt="">
+                        <img src="https://images.unsplash.com/photo-1511829509-0b7f4392577e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VzdGVybiUyMHVnYW5kYSUyMGNhdHRsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
                     </div>
                     <div>
-                        <h1 class="plus">Northen Ug</h1>
-                        <p>6 months/Twice a week</p>
+                        <h1 class="plus">Northern Uganda:</h1>
+                        <p>Master your diet now by clicking <b>'checkout Now'</b></p>
                     </div>
+
                     <div class="last">
-                        <p>Learn more</p>
-                        <button class="btn">Enroll Now</button>
+                        <a href="{{ url_for('kampala_initiatives') }}"><button class="btn">Checkout Now</button></a>
                     </div>
                 </div>
                 <div class="first">
                     <div class="card">
                         <p class="now">NOW OPEN</p>
-                        <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt="">
+                        <img src="https://images.unsplash.com/photo-1510153704066-32b97a2d3c34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBsYW50YXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
                     </div>
                     <div>
-                        <h1 class="plus">Southern Ug</h1>
-                        <p>6 months/Twice a week</p>
+                        <h1 class="plus">Southern Uganda:</h1>
+                        <p>Master your diet now by clicking <b>'checkout Now'</b></p>
                     </div>
+
                     <div class="last">
-                        <p>Learn more</p>
-                        <button class="btn">Enroll Now</button>
+                        <a href="{{ url_for('kampala_initiatives') }}"><button class="btn">Checkout Now</button></a>
                     </div>
-                </div>     
+                </div>
             </div>
             <div class="tria">
                 <div class="tri">

@@ -5,13 +5,20 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Khabertkey'  
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 db = SQLAlchemy(app)
-
+# Create database tables
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
-
-  # Create database tables
+# Define a model for job applicants
+class JobApplicant(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), nullable=False)
+    email = db.Column(db.String(120), nullable=False)
+    qualifications = db.Column(db.String(200), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    location = db.Column(db.String(100), nullable=False)
+    gender = db.Column(db.String(20), nullable=False)
 
 @app.route('/')
 def index():
@@ -56,9 +63,42 @@ def logout():
     # Clear the session data
     session.clear()
     return render_template('logout.html')
-@app.route('/kampala.html')
-def kampala():
-    return render_template('kampala.html')
+
+@app.route('/kampala_initiatives')
+def kampala_initiatives():
+    return render_template('kampala_initiatives.html')
+
+# the route to the apply form
+@app.route('/apply', methods=['GET', 'POST'])
+def apply():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        qualifications = request.form['qualifications']
+        age = request.form['age']
+        location = request.form['location']
+        gender = request.form['gender']
+
+        # Create a new job applicant and add to the database
+        new_applicant = JobApplicant(name=name, email=email, qualifications=qualifications, age=age, location=location, gender=gender)
+        db.session.add(new_applicant)
+        db.session.commit()
+
+        # Redirect to a the appropriate page
+        return redirect(url_for('submit_application.html'))
+
+    return render_template('job_application.html')
+# example
+@app.route('/applicants')
+def get_applicants():
+    applicants = JobApplicant.query.all()
+    return render_template('applicants.html', applicants=applicants)
+
+
+@app.route('/submit_application', methods=['GET', 'POST'])
+def submit_application():
+    # Your code for handling the application submission
+    return render_template('submit_application.html')
 
 if __name__ == '__main__':
     with app.app_context():
