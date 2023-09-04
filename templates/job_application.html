@@ -10,6 +10,7 @@
 <body>
     <div class="application-form">
         <h2>Job Application Form</h2>
+        <div class="appform">
         <form action="{{ url_for('submit_application') }}" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
@@ -33,10 +34,9 @@
                 <option value="other">Other</option>
             </select><br>
 
-            <!-- Add other fields here as needed -->
-
             <button type="submit" class="submit-button">Submit Application</button>
         </form>
+        </div>
     </div>
 </body>
 </html>
