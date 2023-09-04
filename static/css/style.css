@@ -19,7 +19,7 @@ nav {
     position: fixed;
     /* border: 1px solid green; */
     width: 100%;
-    z-index: 100;
+    z-index: 200;
     background-color: green
 }
 
@@ -78,6 +78,7 @@ nav {
     padding: 30px 0;
     left: 200px;
     width: 350px;
+    z-index: 100;
 }
 .open {
     position: absolute;
@@ -96,12 +97,9 @@ nav {
 }
 .fields {
     text-align: center;
-    min-height: 100vh;
-    /* margin-bottom: 70px; */
     position: relative;
     background-color: aliceblue;
     padding-bottom: 5rem;
-    z-index: -100;
 }
 .place {
     font-size: 30px;
@@ -175,6 +173,7 @@ img {
 }
 .btn:hover {
     background-color: green; color: white;
+    cursor: pointer;
 }
 .grade {
     background-color: yellow;
@@ -260,4 +259,11 @@ form button {
     justify-content: center;
     flex-direction: column;
     padding-top: 30px;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
 }

@@ -67,6 +67,22 @@ def logout():
 @app.route('/kampala_initiatives')
 def kampala_initiatives():
     return render_template('kampala_initiatives.html')
+@app.route('/Eastern_ug')
+def Eastern_ug():
+    # Your code to render kampala_initiatives.html goes here
+    return render_template('Eastern_ug.html')
+
+@app.route('/Western_ug')
+def Western_ug():
+    return render_template('Western_ug.html')
+
+@app.route('/Northen_ug')
+def Northern_ug():
+    return render_template('Northern_ug.html')
+
+@app.route('/Southern_ug')
+def Southern_ug():
+    return render_template('Southern_ug.html')
 
 # the route to the apply form
 @app.route('/apply', methods=['GET', 'POST'])
@@ -88,7 +104,7 @@ def apply():
         return redirect(url_for('submit_application.html'))
 
     return render_template('job_application.html')
-# example
+
 @app.route('/applicants')
 def get_applicants():
     applicants = JobApplicant.query.all()
